@@ -12,25 +12,26 @@
 
 <body class="w-full bg-gray-200 m-auto h-screen">
   <div>
-    <div class="text-center h-20 m-auto sticky top-0 bg-green-200">
+    <!-- <div class="text-center h-20 m-auto sticky top-0 bg-green-200">
       <h1 class="text-4xl text-red-900 ">technologies</h1>
-    </div>
-    <section class="flex w-full h-20 bg-gray-400 px-8 sticky top-14">
-      <button
-        class="btnLink hover:bg-gray-600 px-8 hover:text-yellow-600 transition-all duration-75 ease-linear delay-75 active:bg-gray-600">
+    </div> -->
+    <section class="flex w-full h-20 bg-gray-400 px-8 sticky top-0 z-10">
+      <button id="defaultOpen"
+        class="btnLink hover:bg-gray-600 px-8 hover:text-yellow-600 transition-all duration-75 ease-linear delay-75">
         HTML
       </button>
       <button
-        class="btnLink hover:bg-gray-600 px-8 hover:text-yellow-600 transition-all duration-75 ease-linear delay-75 active:bg-gray-600">
+        class="btnLink hover:bg-gray-600 px-8 hover:text-yellow-600 transition-all duration-75 ease-linear delay-75">
         CSS
       </button>
       <button
-        class="btnLink hover:bg-gray-600 px-8 hover:text-yellow-600 transition-all duration-75 ease-linear delay-75 active:bg-gray-600">
+        class="btnLink hover:bg-gray-600 px-8 hover:text-yellow-600 transition-all duration-75 ease-linear delay-75">
         JavaScript
       </button>
     </section>
     <div>
-      <section id="HTML" class="box text-center px-8 py-4 hidden bg-green-200 h-auto">
+      <section id="HTML" class="box text-center px-8 py-4 hidden bg-green-200 h-auto relative">
+        <span class="topright text-4xl absolute right-12 top-0 cursor-pointer hover:text-red-600">&times</span>
         <h1 class="text-4xl">HTML</h1>
         <p class="px-12 mt-4">
           The Number.parseInt method parses a value as a string and returns
@@ -54,7 +55,8 @@
         not display the HTML tags but use them to interpret the content of the page.
         </p>
       </section>
-      <section id="CSS" class="box text-center px-8 py-4 hidden bg-green-200 h-auto">
+      <section id="CSS" class="box text-center px-8 py-4 hidden bg-green-200 h-auto relative">
+        <span class="topright text-4xl absolute right-12 top-0 cursor-pointer hover:text-red-600">&times</span>
         <h1 class="text-4xl">CSS</h1>
         <p class="px-12 mt-4">
           Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document
@@ -81,7 +83,8 @@
           service for CSS documents.[5]
         </p>
       </section>
-      <section id="JavaScript" class="box text-center px-8 py-4 hidden bg-green-200 h-auto">
+      <section id="JavaScript" class="box text-center px-8 py-4 hidden bg-green-200 h-auto relative">
+        <span class="topright text-4xl absolute right-12 top-0 cursor-pointer hover:text-red-600">&times</span>
         <h1 class="text-4xl">JavaScript</h1>
         <p class="px-12 mt-4">
           JavaScript (/ˈdʒɑːvəskrɪpt/), often abbreviated as JS, is a programming language that is one of the core
